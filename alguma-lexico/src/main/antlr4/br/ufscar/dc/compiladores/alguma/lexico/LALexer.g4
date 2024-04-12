@@ -49,7 +49,6 @@ PONTO: '.';
 CADEIA_NAO_FECHADA : '"' ( ~["\r\n] | '""' )*;
 CADEIA : '"' ( ~["\r\n] | '""' )* '"';
 WS : [ \t\r\n]+ -> skip;
-COMMENT : '{' .*? '}' -> skip;
 
 // Nossos
 
@@ -81,7 +80,8 @@ NUM_REAL : ('0'..'9')+ ('.' ('0'..'9')+)?;
 IDENT : [a-zA-Z_][a-zA-Z_0-9]*;
 
 // Lexer error handling
-COMENTARIO_NAO_FECHADO : '{' .*?;
-COMENTARIO_FECHADO : '{' .*? '}' -> skip;
+COMENTARIO_NAO_FECHADO : '{' ~('}')+;
+COMENTARIO_FECHADO : '{' ~('\n' | '\r' | '}')+ '}' -> skip;
+
 
 ERR : . ;
