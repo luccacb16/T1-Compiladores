@@ -17,13 +17,17 @@ public class Principal {
         
         // Escreve os tokens no arquivo de saída
         try (PrintWriter writer = new PrintWriter(args[1])) {
+            // Cria um CharStream que lê o arquivo de entrada
             CharStream cs = CharStreams.fromFileName(args[0]);
+            
+            // Cria o lexer
             LALexer lex = new LALexer(cs);
 
             Token t = null;
-            while ((t = lex.nextToken()).getType() != Token.EOF) {
+            while ((t = lex.nextToken()).getType() != Token.EOF) { // Itera sobre os tokens
                 String nomeToken = LALexer.VOCABULARY.getDisplayName(t.getType());
 
+                // Tratamento de erros específicos
                 if (nomeToken.equals("COMENTARIO_NAO_FECHADO")) {
                     String error = "Linha " + t.getLine() + ": " + "comentario nao fechado";
                     writer.println(error);
@@ -41,7 +45,8 @@ public class Principal {
                 }
                     
                 String tokenStr = "<" + "'" + t.getText() + "'" + "," + LALexer.VOCABULARY.getDisplayName(t.getType()) + ">";
-
+                
+                // Escreve o token no arquivo de saída
                 writer.println(tokenStr);
             }
 
