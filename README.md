@@ -1,9 +1,11 @@
-## Integrantes
+## Integrantes ##
 
-### Lucas Abbiati Pereira, 801572
-### Lucca Couto Barberato, 800257
+### Lucas Abbiati Pereira, 801572 ###
+### Lucca Couto Barberato, 800257 ###
+
     Para conseguirmos executar o código é necessário que algumas dependências estejam em uma versão específica.
-## Versões
+
+## Versões ##
     Java: 1.8
     Junit: 4.11
     Antlr: 4.11.1
@@ -16,7 +18,8 @@
     maven-deploy-plugin: 2.8.2
     maven-site-plugin: 3.7.1
     maven-project-info-reports-plugin: 3.0.0
-## 1° Opção de execução
+
+## 1° Opção de execução ##
     Para buildar o projeto é necessário usar um comando na raiz do diretório
 
     ```
@@ -24,18 +27,15 @@
     
     ```
 
-    Após executar o comando anterior, irá criar um arquivo .jar. Para utilizar o corretor e testar 
-    o programa é necessário usar um comando com alguns parâmetros. A entrada é um arquivo .txt e 
-    a saída é salva em um arquivo .txt também
+    Após executar o comando anterior, irá criar um arquivo .jar. Para utilizar o corretor e testar o programa é necessário usar um comando com alguns parâmetros. A entrada é um arquivo .txt e a saída é salva em um arquivo .txt também
     OBS: O arquivo dos casos teste foi disponibilizado pelo professor da disciplina Daniel Lucredio
 
     ```
     java -jar <caminho do arquivo alguma-lexico-1.0-SNAPSHOT-jar-with-dependencies> <caminho para o txt de entrada> <caminho para o txt de saída>
     ```
 
-## 2° Opção de execução
-    Os integrantes do grupo criaram um script com o nome run_corretor.sh que facilita o build e 
-    a execução do programa. Para rodar é necessário executar o script na raiz do diretório
+## 2° Opção de execução ##
+    Os integrantes do grupo criaram um script com o nome run_corretor.sh que facilita o build e a execução do programa. Para rodar é necessário executar o script na raiz do diretório
 
     ```
     ./run_corretor.sh
@@ -45,7 +45,7 @@
     ```
     chmod +x run_corretor.sh
     ```
-## Resultado
+## Resultado ##
     O resultado final será exibido no arquivo de saída (o mesmo que foi passado como parâmetro 
     para a execução)
     
