@@ -6,18 +6,18 @@
 Para conseguirmos executar o código é necessário que algumas dependências estejam em uma versão específica.
 
 ## Versões ##
-+Java: 1.8
--Junit: 4.11
-*Antlr: 4.11.1
-maven-clean-plugin: 3.1.0
-maven-resources-plugin: 3.0.2
-maven-compiler-plugin: 3.8.0
-maven-surefire-plugin: 2.22.1
-maven-jar-plugin: 3.0.2
-maven-install-plugin: 2.5.2
-maven-deploy-plugin: 2.8.2
-maven-site-plugin: 3.7.1
-maven-project-info-reports-plugin: 3.0.0
++ Java: 1.8
++ Junit: 4.11
++ Antlr: 4.11.1
++ maven-clean-plugin: 3.1.0
++ maven-resources-plugin: 3.0.2
++ maven-compiler-plugin: 3.8.0
++ maven-surefire-plugin: 2.22.1
++ maven-jar-plugin: 3.0.2
++ maven-install-plugin: 2.5.2
++ maven-deploy-plugin: 2.8.2
++ maven-site-plugin: 3.7.1
++ maven-project-info-reports-plugin: 3.0.0
 
 ## 1° Opção de execução ##
 Para buildar o projeto é necessário usar um comando na raiz do diretório
