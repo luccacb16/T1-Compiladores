@@ -2,10 +2,7 @@
 
 ### Lucas Abbiati Pereira, 801572
 ### Lucca Couto Barberato, 800257
-
-
     Para conseguirmos executar o código é necessário que algumas dependências estejam em uma versão específica.
-
 ## Versões:
     Java: 1.8
     Junit: 4.11
@@ -19,7 +16,6 @@
     maven-deploy-plugin: 2.8.2
     maven-site-plugin: 3.7.1
     maven-project-info-reports-plugin: 3.0.0
-
 ## 1° Opção de execução:
    Para buildar o projeto é necessário usar um comando na raiz do diretório:
 
@@ -37,8 +33,6 @@
     java -jar <caminho do arquivo alguma-lexico-1.0-SNAPSHOT-jar-with-dependencies> <caminho para o txt de entrada> <caminho para o txt de saída>
     
     ```
-
-
 ## 2° Opção de execução:
     Os integrantes do grupo criaram um script com o nome run_corretor.sh que facilita o build e 
     a execução do programa. Para rodar é necessário executar o script na raiz do diretório
@@ -46,13 +40,11 @@
     ```
     ./run_corretor.sh
     ```
-
     Caso haja erro de permissão, é necessário outro comando para conceder permissão ao script
 
     ```
     chmod +x run_corretor.sh
     ```
-
 ## Resultado:
     O resultado final será exibido no arquivo de saída (o mesmo que foi passado como parâmetro 
     para a execução)
